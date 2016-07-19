@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="GetEasClientDeviceInformation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GetEasClientDeviceInformation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Padding="80">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="FriendlyName:"/>
+                <TextBlock x:Name="FriendlyName" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="OperatingSystem:"/>
+                <TextBlock x:Name="OperatingSystem" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="SystemFirmwareVersion:"/>
+                <TextBlock x:Name="SystemFirmwareVersion" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="SystemHardwareVersion:"/>
+                <TextBlock x:Name="SystemHardwareVersion" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="SystemManufacturer:"/>
+                <TextBlock x:Name="SystemManufacturer" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="SystemProductName:"/>
+                <TextBlock x:Name="SystemProductName" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="SystemSku:"/>
+                <TextBlock x:Name="SystemSku" Text="空" Margin="10,0,0,0"/>
+            </StackPanel>
+            <Button Content="刷新" Click="Button_Click" Width="100" Height="40"/>
+        </StackPanel>
+    </Grid>
+</Page>
